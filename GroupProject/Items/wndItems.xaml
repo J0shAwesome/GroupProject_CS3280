@@ -1,0 +1,24 @@
+﻿<Window x:Class="GroupProject.Items.wndItems"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupProject.Items"
+        mc:Ignorable="d"
+        Title="wndItems" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="391*"/>
+            <ColumnDefinition Width="409*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblCode" Content="Code:" HorizontalAlignment="Left" Margin="48,26,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCost" Content="Cost:" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDescription" Content="Description" HorizontalAlignment="Left" Margin="50,113,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="cmdAddItem" Content="Add Item" HorizontalAlignment="Left" Margin="41,191,0,0" VerticalAlignment="Top" Height="43" Width="89"/>
+        <Button x:Name="cmdEditItem" Content="Edit Item" HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" Height="43" Width="89"/>
+        <Button x:Name="cmdDeleteItem" Content="Delete Item" HorizontalAlignment="Left" Margin="266,191,0,0" VerticalAlignment="Top" Height="43" Width="89"/>
+        <DataGrid Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="35,26,36,200" Width="NaN"/>
+        <Button x:Name="cmdSaveItem" Content="Save Item" HorizontalAlignment="Left" Margin="30,263,0,0" VerticalAlignment="Top" Height="38" Width="111"/>
+
+    </Grid>
+</Window>
